@@ -1,37 +1,160 @@
+/* Estilos base (ya existentes) */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+h1 {
+  max-width: 940px;
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1; 
+  margin: 40px 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-testimonio {
+  width: 1170px;
+  height: 368px;
+  margin: 10px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.imagen-testimonio {
+  height: 100%;
+  width: auto;
+}
+
+.contenedor-texto-testimonio {
+  text-align: center;
+  padding: 40px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.nombre-testimonio {
+  font-size: 1.3rem;
+}
+
+.cargo-testimonio {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.texto-testimonio {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1200px) {
+  .contenedor-testimonio {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
   }
-  
-  html, body {
-    font-size: 18px;
-    background-color: #f5f6f7;
+
+  .imagen-testimonio {
+ 
+    height: auto;
+    max-height: 200px;
+    margin-bottom: 20px;
   }
-  
+
+  .contenedor-texto-testimonio {
+    padding: 20px;
+  }
+
   h1 {
-    max-width: 940px;
-    font-size: 2.5em;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    /* para dar mayor separación de linea */
-    line-height: 1.1; 
-    margin: 40px 0;
+    font-size: 2em;
+    margin: 20px 0;
   }
-  
-  .App {
-    /* para adaptarse a la altura del contenedor */
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+  .nombre-testimonio, .cargo-testimonio {
+    font-size: 1.1rem;
   }
-  
+
+  .texto-testimonio {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .contenedor-principal {
-    min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: auto;
   }
+
+  h1 {
+    font-size: 1.8em;
+    margin: 20px 20px;
+  }
+
+  .contenedor-testimonio {
+    margin: 20px;
+  }
+
+  .contenedor-texto-testimonio {
+    padding: 10px;
+  }
+
+  .nombre-testimonio, .cargo-testimonio {
+    font-size: 1rem;
+  }
+
+  .texto-testimonio {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+    margin: 10px 20px;
+  }
+
+  .contenedor-testimonio {
+    margin: 10px;
+  }
+
+  .contenedor-texto-testimonio {
+    padding: 5px;
+  }
+
+  .nombre-testimonio, .cargo-testimonio {
+    font-size: 0.9rem;
+  }
+
+  .texto-testimonio {
+    font-size: 0.8rem;
+  }
+}
