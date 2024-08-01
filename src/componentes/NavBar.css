@@ -7,7 +7,6 @@
   padding: 0 20px;
   background-color: #282c34;
   height: 60px;
-  width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -38,7 +37,7 @@
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     padding: 10px;
     height: auto;
   }

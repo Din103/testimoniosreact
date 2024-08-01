@@ -10,7 +10,7 @@ function NavBar() {
       </div>
       <div className="navbar-links">
         <a href="/">Home</a>
-        <a href="/login">LogIn</a>
+        <a href="/login">Login</a>
         <a href="/formulario">Formulario</a>
       </div>
     </nav>
